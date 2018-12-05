@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <br>
+  <br>
+  <ion-item>
+    <ion-input required type="text" placeholder="Nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-input required type="text" placeholder="Apellido"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input required type="number" placeholder="Cedula"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-input required type="date" placeholder="Fecha de Nacimiento"></ion-input>
+  </ion-item>
+  <br>
+  <br>
+  <ion-button [routerLink]="['/home']" shape="round" expand="full" color="success" onclick="add('7')">Guardar</ion-button>
+
+</ion-content>

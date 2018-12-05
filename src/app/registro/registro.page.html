@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <br>
+    <br>
+    
+    <ion-item>
+        <ion-label>Nombre:</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-input required type="text" placeholder="Ingrese su Nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Apellido:</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-input required type="text" placeholder="Ingrese su Apellido"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Cedula:</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-input required type="number" placeholder="Ingrese su Cedula"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>Fecha de Nacimiento:</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-input required type="date" placeholder="Fecha de Nacimiento"></ion-input>
+    </ion-item>
+    <br>
+    <br>
+  
+    <ion-grid>
+        <ion-row>  
+            <ion-col>
+            </ion-col>
+            <ion-col size="6">
+    <ion-button [routerLink]="['/home']" shape="round" expand="full" color="success" onclick="add('7')">Guardar</ion-button>
+            </ion-col>
+            <ion-col>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
